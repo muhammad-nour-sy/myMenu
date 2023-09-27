@@ -503,7 +503,7 @@ const Menu = () => {
     const menuId = params.menuId;
     const myCategories = useCategories(menuId);
     console.log();
-    const myMenuItems = useMenuItems(menuId);
+    const {menuItems: myMenuItems, isPending, error } = useMenuItems(menuId);
     console.log(myMenuItems);
     const myInformation = useInformation(menuId);
     console.log(myInformation);
