@@ -3,7 +3,7 @@ import useFetch from "./useFetch";
 import urlData from "../urlData";
 
 export default function useMenuItems(id) {
-    const menuItemsUrl = urlData.find((url) => url.title === "menuItems");
+    const menuItemsUrl = urlData.find((url) => url.title === "menuItems").url;
     const mediaUrl = urlData.find((url) => url.title === "media").url;
 
     const { data, isPending, error } = useFetch(menuItemsUrl + id);
