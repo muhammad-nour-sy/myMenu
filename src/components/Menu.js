@@ -502,11 +502,11 @@ const Menu = () => {
     const menu = menuItems;
     const menuId = params.menuId;
     const myCategories = useCategories(menuId);
-    console.log();
+    
     const {menuItems: myMenuItems, isPending, error } = useMenuItems(menuId);
-    console.log(myMenuItems);
+    
     const myInformation = useInformation(menuId);
-    console.log(myInformation);
+  
     
 
     const imgUrl = "https://qr.zoudne.com/dashbord/storage/";
