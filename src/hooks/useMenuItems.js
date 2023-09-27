@@ -34,5 +34,9 @@ export default function useMenuItems(id) {
         }
     }, [data]);
 
+    useEffect(() => {
+        if (error) console.log(error)
+    }, [error])
+
     return { menuItems, isPending, error }; 
 }
