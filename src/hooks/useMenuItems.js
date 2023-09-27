@@ -12,6 +12,7 @@ export default function useMenuItems(id) {
 
     useEffect(() => {
         if (data) {
+            console.log(data)
             const fetchedMenuItems = data.map((menuItem) => {
                 const menuItemName = menuItem.menus_name;
                 const menuItemDescriptions = menuItem.description;
